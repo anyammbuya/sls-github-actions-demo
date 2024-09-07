@@ -27,7 +27,7 @@ jobs:
       with:
         args: | 
               -c "serverless plugin install --name serverless-iam-roles-per-function && 
-              serverless depoly --stage prod"
+              serverless deploy --stage prod"
         entrypoint: /bin/sh
       env:
         #SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
